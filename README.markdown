@@ -4,6 +4,8 @@
 
 The jQuery Form Preview plugin allows web developers to easily add preview functionality to any HTML form that follows W3C standards so that users can check their response before submitting the form.
 
+##Usage
+
 ###Basic
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
