@@ -24,7 +24,7 @@ The jQuery Form Preview plugin allows web developers to easily add preview funct
 	    });
 	</script>
 
-##Getting Started
+##Explanation
 
 * Download the jquery plugin js file to your website
 * Add a script link to the .js file (after calling jquery itself)
