@@ -32,24 +32,6 @@ The jQuery Form Preview plugin allows web developers to easily add preview funct
 * Each input tag must be associated with a label using the id attribute of the input and the for attribute of the label tag. The input tag cannot be inside the label element, they must be separate
 * The preview output for a radio button/checkbox will first look for an associated label tag, then a title tag on the radio button/checkbox and failing these it will resort to displaying the field value
 * The table row heading for a collection of radio buttons or checkboxes requires an html tag with an id of 'for_' + field name, eg `<p id="for_display_method">Display options</p>`
-
-The following WILL appear in the form preview 
-
-* Hidden fields with a class of 'preview' (these will have a row heading of 'N/A')
-* Password fields
-* Checkboxes
-* Radio buttons
-* Textareas
-* Select one dropdowns
-* Select multiple dropdowns
-* File uploads
-
-The following WILL NOT appear in the form preview:
-
-* Input fields with a class of 'nopreview'
-* Hidden fields that don't have a 'preview' class
-* Standard buttons, reset buttons and submit buttons
-
 * When the user clicks preview it hides the form and displays the form field entries in table format
 * The table is wrapped in two div elements. The outer one has an id of `'form_preview'`. The inner div element has an id of `'preview_div_' + form id` and a class of `'preview_form'`
 * Inside the inner div there is an h2 (`'Form Preview'`) with an id of `'preview_heading'`
@@ -67,6 +49,23 @@ The following WILL NOT appear in the form preview:
 * All edit buttons have a class of `'preview_button_edit'`
 * The cancel button on the preview has a class of `'preview_cancel'`
 * The submit button on the preview has a class of `'preview_submit'`
+
+The following WILL appear in the form preview 
+
+* Hidden fields with a class of 'preview' (these will have a row heading of 'N/A')
+* Password fields
+* Checkboxes
+* Radio buttons
+* Textareas
+* Select one dropdowns
+* Select multiple dropdowns
+* File uploads
+
+The following WILL NOT appear in the form preview:
+
+* Input fields with a class of 'nopreview'
+* Hidden fields that don't have a 'preview' class
+* Standard buttons, reset buttons and submit buttons
 
 ##Requirements
 
