@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+	<head>
+
+		<title>All Uni-Form Units in Both Layouts</title>
+
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Type" content="text/html" />
+
+		<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+		<script src="jquery.preview.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#test_form, #test_form_2").formPreview({ "buttonText" : "Preview this form" });
+			});
+		</script>
+
+	</head>
+
+	<body>
+
+		<div id="wrapper">
+
+			<h1>Information gathering form</h1>
+
+			<form action="" title="Information gathering form" method="post" enctype="multipart/form-data" id="test_form" class="test_form">
+
+				<fieldset>
+					<legend>First fieldset</legend>
+
+					<div>
+						<label for="email">Email address</label>
+						<input name="email" id="email" value="" size="35" maxlength="50" type="text" class="textInput" />
+					</div>
+
+					<div>
+						<label for="password">Choose Password</label>
+						<input name="password" id="password" value="" size="35" maxlength="25" type="password" class="textInput" />
+					</div>
+
+					<div>
+						<label for="password_retype">Re-enter password</label>
+						<input name="password_retype" id="password_retype" value="" size="35" maxlength="25" type="password" class="textInput" />
+					</div>
+
+					<div>
+						<label for="title">Title</label>
+						<select name="title" id="title" class="selectInput">
+							<option value="">Please select</option>
+							<option value="mr">Mr</option>
+							<option value="mrs">Mrs</option>
+							<option value="miss">Miss</option>
+							<option value="ms">Ms</option>
+						</select>
+					</div>
+
+					<div>
+						<label for="multi-test">Multiple select test</label>
+						<select name="multi-test" id="multi-test" class="selectInput" multiple="multiple" size="4">
+							<option value="">Please select</option>
+							<option value="first">First</option>
+							<option value="second">Second</option>
+							<option value="third">Third</option>
+							<option value="fourth">Fourth</option>
+						</select>
+					</div>
+
+					<div>
+						<label for="first_name">First Name</label>
+						<input name="first_name" id="first_name" value="" size="35" maxlength="20" type="text" class="textInput" />
+					</div>
+
+					<div>
+						<label for="last_name">Last Name</label>
+						<input name="last_name" id="last_name" value="" size="35" maxlength="20" type="text" class="textInput" />
+					</div>
+
+				</fieldset>
+				<fieldset>
+					<legend>Second fieldset</legend>
+
+					<div>
+						<label for="dob">Date of Birth</label>
+						<input type="text" id="dob" name="dob" value="" />
+					</div>
+
+					<div>
+						<label for="phone_num">Phone number</label>
+						<input type="text" id="phone_num" name="phone_num" size="20" value="" />
+					</div>
+
+					<div>
+						<label for="skills_interests">Skills and interests</label>
+						<textarea name="skills_interests" id="skills_interests" rows="10" cols="35"></textarea>
+					</div>
+
+					<div>
+						<label for="username">Screen Name</label>
+						<input name="username" id="username" value="" size="35" maxlength="25" type="text" class="textInput" />
+					</div>
+
+					<div>
+						<label for="new_image">Upload Something</label>
+						<input name="new_image" id="new_image" size="30" type="file" class="fileUpload" />
+					</div>
+
+					<input type="hidden" class="preview" id="hidden_field" name="hidden_field" value="hidden value here" />
+
+					<div>
+						<p id="for_display_method" class="label">Display options</p>
+						<div class="multi">
+							<input name="display_method" id="display_email" value="email" type="radio" /> <label for="display_email">Display my email</label><br />
+							<input name="display_method" id="display_photo" value="photo" type="radio" /> <label for="display_photo">Display my image</label>
+						</div>
+					</div>
+
+					<div>
+						<p id="for_checkbox_field" class="label">Checkbox field options</p>
+						<div class="multi">
+							<input name="checkbox_field" id="checkbox_field_1" value="Y" type="checkbox" /> <label for="checkbox_field_1">Checkbox Field 1</label><br />
+							<input name="checkbox_field" id="checkbox_field_2" value="N" type="checkbox" /> <label for="checkbox_field_2">Checkbox Field 2</label>
+						</div>
+					</div>
+
+				</fieldset>
+
+				<div class="ctrlHolder">
+					<p>
+						<input name="i_agree" id="i_agree" value="Y" title="Yes" type="checkbox" /> <label for="i_agree" class="inlineLabel">I have read and agree to your privacy policy</label>
+					</p>
+				</div>
+
+				<div class="buttons">
+					<input type="reset" value="Reset" /><input type="submit" value="Submit" />
+				</div>
+
+<div id="results"></div>
+
+			</form>
+
+
+			<form action="" title="Second form" method="get" id="test_form_2">
+				<label for="test-label">test label</label>
+				<input type="text" value="" id="test-label" name="test-label" />
+
+				<p id="for_another_checkbox_field" class="label">Checkbox2 field options</p>
+				<div class="multi">
+					<input name="another_checkbox_field" id="another_checkbox_field_1" value="Y" type="checkbox" /> <label for="another_checkbox_field_1">Checkbox2 Field 1</label><br />
+					<input name="another_checkbox_field" id="another_checkbox_field_2" value="N" type="checkbox" /> <label for="another_checkbox_field_2">Checkbox2 Field 2</label>
+				</div>
+
+				<input type="submit" value="Submit form 2" />
+
+			</form>
+
+		</div>
+
+	</body>
+</html>

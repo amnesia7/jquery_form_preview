@@ -1,0 +1,79 @@
+body {
+	font: normal normal 12px/1.8em "Lucida Sans Unicode", "Lucida Grande", "Trebuchet MS", sans-serif;
+}
+
+div#wrapper {
+	margin: 20px auto;
+	width:700px;
+}
+
+.test_form, .preview_div {
+	padding: 20px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.test_form {
+	background: #F9F9F9;
+}
+
+.preview_div {
+	border:1px solid red;
+}
+
+#form_preview {
+
+}
+
+.test_form fieldset, .preview_table {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.test_form label, .test_form input {
+	display: block;
+}
+
+.test_form input, .test_form textarea, .test_form select {
+	padding: 3px;
+}
+
+.test_form input[type="hidden"] {
+	padding: 0px;
+}
+
+.test_form .multi label, .test_form .multi input, .test_form .buttons input {
+	display: inline;
+}
+
+.preview_table {
+	width:100%;
+}
+
+.preview_th_field, .preview_th_value, .preview_th_edit, .preview_td_field, .preview_td_value, .preview_td_edit {
+	vertical-align: top;
+	text-align:left;
+}
+
+.preview_th_field, .preview_th_value, .preview_th_edit {
+	background-color: #E1E1E1;
+	width:50%;
+	text-align:left;
+}
+
+.preview_td_field, .preview_td_value, .preview_td_edit {
+	background-color: #F2F2F2;
+	width:40%;
+	text-align:left;
+}
+
+.preview_td_edit {
+	width:10%;
+	text-align:center;
+}
+
+.preview_td_edit a {
+	color:#555555;
+}
+
