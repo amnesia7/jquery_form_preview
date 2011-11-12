@@ -34,19 +34,19 @@ The jQuery Form Preview plugin allows web developers to easily add preview funct
 * The table row heading for a collection of radio buttons or checkboxes requires an html tag with an id of 'for_' + field name, eg `<p id="for_display_method">Display options</p>`
 
 * The following WILL appear in the form preview 
-** Hidden fields with a class of 'preview' (these will have a row heading of 'N/A')
-** Password fields
-** Checkboxes
-** Radio buttons
-** Textareas
-** Select one dropdowns
-** Select multiple dropdowns
-** File uploads
+1. Hidden fields with a class of 'preview' (these will have a row heading of 'N/A')
+1. Password fields
+1. Checkboxes
+1. Radio buttons
+1. Textareas
+1. Select one dropdowns
+1. Select multiple dropdowns
+1. File uploads
 
 * The following WILL NOT appear in the form preview:
-** Input fields with a class of 'nopreview'
-** Hidden fields that don't have a 'preview' class
-** Standard buttons, reset buttons and submit buttons
+1. Input fields with a class of 'nopreview'
+1. Hidden fields that don't have a 'preview' class
+1. Standard buttons, reset buttons and submit buttons
 
 * When the user clicks preview it hides the form and displays the form field entries in table format
 * The table is wrapped in two div elements. The outer one has an id of `'form_preview'`. The inner div element has an id of `'preview_div_' + form id` and a class of `'preview_form'`
